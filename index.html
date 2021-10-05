@@ -1,0 +1,173 @@
+
+<title>Web Программирование</title>
+</head>
+<link rel = "stylesheet" href = "style1.css" />
+<link rel = "stylesheet" href = "flexbox1.css"/>
+   <body class = "body" >
+  <header class = "header">
+     <img class = "header_picture" src = "https://assets.website-files.com/5a09042ff36e870001dc01e2/5a1f10c80a7627000187e00f_fiftythree-logo-new-white.svg" > 
+     <h1 id="header" style = "color:#FDFEFE"> Ссылки формы таблицы</h1>
+  </header> 
+  
+  <nav class = "nav">
+  <div class = "nav_links">
+	<div class="child">
+	<ul>
+	<a href = "#header" title = "Нумерованный список гиперссылок">Links</a>
+	  <a href = "#Forma" title = "Форма">Form</a>
+	  <a href = "#table" title = "Таблица">Table</a>
+	  <a href = "#avtor" title = "Автор">Autor</a>
+	<ul>
+	</div>
+</div>
+      
+	  <div class = "nav_links1">
+	    <li> <a href="http://www.kubsu.ru/"
+        title="Официальный сайт Кубанского государственного университета">КубГУ</a> </li>
+        <li> <a href="https://ru.wikipedia.org/" 
+        title="Главная страница Wikipedia">Wikipedia</a> </li>
+        <li> <a href = "ftp://www.kubsu.ru/files/file.html">Ссылка на файл на FTP сервере без авторизации</a></li>
+        <li> <a href = "ftp://user:123@www.kubsu.ru/files/file.html">Ссылка на файл на FTP сервере c авторизации</a></li>
+        <li> <a href="https://habr.com/ru/all/#577424">Ссылка на фрагмент страницы некоторого сайта</a> </li>
+        <li> <a href = "#p1">Ссылка на фрагмент текущей страницы </a></li>  
+        <li> <a href = "https://www.kubsu.ru?parameter1=p1&parameter2=p2"> Ссылка с двумя параметрами URL</a></li> 
+        <li> <a> Ссылка без href</a></li>
+        <li> <a href> Ссылка с пустым href</a></li> 
+        <li> <a href="https://www.kubsu.ru" rel="nofollow">Ссылка по которой запрещен переход поисковикам</a></li>
+		<li> <a href="about">Относительная ссылка на страницу в текущем каталоге</a> </li>
+		<li> <a href="./about/page">Относительная ссылка на страницу в каталоге about</a> </li> 
+        <li> <a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+        <li> <a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+        <li> <a href="/">Сокращенная ссылка на главную</a></li>
+        <li> <a href="/pages/page">Сокращенная ссылка на внутреннюю</a></li>
+ </ol>
+ <li> Ссылка изображение <br>
+        <a href = "https://ru.wikipedia.org/wiki/Чемпионат_мира_по_танковому_биатлону_2021">
+        <img src="https://fototerra.ru/photo/_/_/image294601.jpg" width="310" height="242" alt="Описание картинки"><a/>
+        </li>
+        <li> Ссылки из прямоугольных и круглых областей картинки <br>
+        <img src="https://fototerra.ru/photo/Russia/Petrovsk/image294660.jpg" width="310" height="242" alt="Описание картинки" usemap="#mymap">
+        <map name="mymap">
+        <area shape="rect" coords="40,25,90,150" href="https://radioportal.ru/news/radio-purga-ne-spi-zamyorznesh" alt="Прямоугольная область">
+        <area shape="circle" coords="100,210,25" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BD%D0%B5%D0%B3" alt="Круглая область">
+        </map>
+ </li>
+ </div>
+</div>
+
+
+			<div class = "nav_table" id ="table">
+			<table>
+			<tbody>
+			<tr>
+			<th colspan = "4">Таблица</th>
+			</tr>
+			<tr>
+			    <th>Факультет</th>
+				<th>ФИО</th>
+				<th>Предмет</th>
+				<th>Оценка</th>
+			</tr>
+			<tr>
+			<td>ФКТиПМ</td>
+			<td>Иванов М.С.</td>
+			<td>WEB интерфейс</td>
+			<td>Хорошо</td>
+			</tr>
+			<tr>
+			<td>ФКТиПМ</td>
+			<td>Смирнов И.П.</td>
+			<td>WEB интерфейс</td>
+			<td>Отлично</td>
+			</tr>
+			<td>ФКТиПМ</td>
+			<td>Соболев Р.Э.</td>
+			<td>WEB интерфейс</td>
+			<td>Отлично</td>
+			<tr>
+			<td>ФКТиПМ</td>
+			<td>Пушкин А.С.</td>
+			<td>WEB интерфейс</td>
+			<td>Хорошо</td>
+			</tr>
+			<tr>
+			<td>ФКТиПМ</td>
+			<td>Рудык Д.И.</td>
+			<td>WEB интерфейс</td>
+			<td>Отлично</td>
+			</tr>
+			<tr>
+			<td>ФКТиПМ</td>
+			<td>Солодовников А.П.</td>
+			<td>WEB интерфейс</td>
+			<td>Хорошо</td>
+			</tr>
+			</tbody>
+			</table>
+			</div>
+			
+<div class = "nav_form" id = "Forma">
+        <h2>Форма</h2>
+        <form action="http://example.com" method="POST">
+                <label>
+                    Имя:<br>
+                    <input name="yourname">
+                </label><br>
+                <label>
+                    e-mail:<br>
+                    <input name="e-mail" type="email">
+                </label><br>
+                <label>
+                    Дата рождения:<br>
+                    <input name="dateofbirth" type="date">
+                </label><br>
+                Количество рук:<br>
+                <label>
+                    <input type="radio" name="radio-group-1" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="radio-group-1" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="radio-group-1" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" checked="checked" name="radio-group-1" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="radio-group-1" value="5">
+                    5
+                </label><br>
+                <label>
+                    Хобби:<br>
+                    <select name="p" multiple="multiple">
+                    <option value="cinema" selected="selected">Смотреть кино</option>
+                    <option value="book">Читать книги</option>
+                    <option value="sport">Спорт</option>
+                    </select>
+                </label><br>
+                <label>
+                    Биография:<br>
+                    <textarea name="bio">О себе ты можешь рассказать тут...</textarea>
+                </label><br>
+                С контрактом ознакомлен(а):<br>
+                <label>
+                    <input type="checkbox" checked="checked" name="check-1">
+                </label><br>
+                <input type="submit" value="Отправить">
+            </form>
+			</div>
+			</nav>
+			
+			 <footer class = "endfooter" id="avtor">
+			 <br>
+			<p>© Кумпан Руслан Эдуардович 2021</p>
+			<div class = "ifooter">Сделанно при помощи лекций Сергея Геннадьевича Синица</div>
+			</footer>
+  </body>
+ 
+</html>
